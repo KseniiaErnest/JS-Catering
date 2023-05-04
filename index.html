@@ -4,9 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Catering Calculator</title>
 </head>
 <body>
-  
+
+  <main>
+    <section id="main-container">
+      <h1>Catering Plans and Prices</h1>
+      <form class="box1">
+        <p>Plan options🌸</p>
+        <select id="plan">
+          <option value="0" disabled selected>Please choose a catering plan</option>
+          <option value="15">Classic Buffet</option>
+          <option value="20">Gourmet Feast</option>
+          <option value="30">Elite Dining Experience</option>
+        </select>
+
+        <p>How many people?</p>
+        <input type="text" placeholder="Number of people" id="number">
+
+        <button id="btn">Calculate</button>
+
+
+      </form>
+
+      <div class="box2">
+
+        <div id="pricePerPerson">
+          <span>$</span>
+          <span id="perPerson"></span>
+          <span>per person</span>
+        </div>
+
+        <div id="discountPricePerPerson">
+          <p>Discount included</p>
+          <span>$</span>
+          <span id="discountPerPerson"></span>
+          <span>per person</span>
+        </div>
+
+        <div id="totalAmount">
+          <p>Total</p>
+          <span>$</span>
+          <span id="total"></span>
+          <span>per person</span>
+        </div>
+
+      </div>
+
+
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
