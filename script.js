@@ -18,7 +18,7 @@ if (numberInput === '' || plan === '0' || numberInput < 1) {
 
 // To dispaly per person price: we get a string so first change it to a number value and then use .toFixed() method
   let perPerson = Number(plan).toFixed(2);
-  document.querySelector('#perPerson').textContent = perPerson;
+  document.querySelector('#perPerson').textContent = `$ ${perPerson}`;
 
   // Discounts conditions
   if (numberInput > 10 && numberInput <= 50) {
@@ -35,11 +35,11 @@ if (numberInput === '' || plan === '0' || numberInput < 1) {
 
   // To display discounts
   let discountPerPerson = perPerson - discount;
-  document.querySelector('#discountPerPerson').textContent = discountPerPerson.toFixed(2);
+  document.querySelector('#discountPerPerson').textContent = `$ ${discountPerPerson.toFixed(2)}`;
 
   // To display total amount
   let totalAmount = discountPerPerson * numberInput;
-  document.querySelector('#total').textContent = totalAmount.toFixed(2);
+  document.querySelector('#total').textContent = `$ ${totalAmount.toFixed(2)}`;
 
 }
 
