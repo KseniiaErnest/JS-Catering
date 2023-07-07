@@ -108,6 +108,11 @@ h1 {
 }
 
 @media all and (max-width: 45em) {
+  #main-container {
+    background-color:rgb(254, 252, 243, 0.2) ;
+    backdrop-filter: blur(10px);
+  }
+
 .box2 {
   flex-direction: column;
   gap: 2rem;
@@ -126,5 +131,9 @@ h1 {
 
 #pricePerPerson, #discountPricePerPerson, #totalAmount {
   font-size: 1.2rem;
+}
+
+#plan, #number, #btn, #pricePerPerson, #discountPricePerPerson, #totalAmount {
+  border: 2px solid rgba(0, 0, 0, 0.349)
 }
 }
